@@ -1,0 +1,4 @@
+{include file="$template/header.tpl"}
+<div class="page-hero" style="padding-top:18px"><span class="eyebrow">Support</span><h1 class="gradient-text">Your tickets</h1><p>Review open and previous support conversations.</p></div>
+<div class="card"><div class="comparison"><table><thead><tr><th>Subject</th><th>Department</th><th>Status</th><th>Last Update</th></tr></thead><tbody>{foreach $tickets as $ticket}<tr><td><a href="viewticket.php?tid={$ticket.tid}&c={$ticket.c}">{$ticket.subject}</a></td><td>{$ticket.department}</td><td>{$ticket.status}</td><td>{$ticket.lastreply}</td></tr>{foreachelse}<tr><td colspan="4">No support tickets found.</td></tr>{/foreach}</tbody></table></div><div style="margin-top:22px"><a class="btn btn-primary" href="submitticket.php">Open New Ticket</a></div></div>
+{include file="$template/footer.tpl"}

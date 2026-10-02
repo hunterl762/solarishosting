@@ -1,0 +1,5 @@
+{include file="$template/includes/head.tpl"}
+<link href="{$WEB_ROOT}/templates/{$template}/css/solaris.css" rel="stylesheet">
+<body class="whmcs-shell">
+<header class="site-header"><div class="container nav"><a class="brand" href="{$WEB_ROOT}/index.php"><span class="brand-mark"></span><span>Solaris Hosting</span></a><nav class="nav-links"><a href="{$WEB_ROOT}/cart.php">Hosting</a><a href="{$WEB_ROOT}/domainchecker.php">Domains</a><a href="{$WEB_ROOT}/knowledgebase">Knowledgebase</a><a href="{$WEB_ROOT}/submitticket.php">Support</a></nav><div class="nav-actions">{if $loggedin}<a class="btn btn-ghost" href="{$WEB_ROOT}/clientarea.php">My Account</a><a class="btn btn-primary" href="{$WEB_ROOT}/logout.php">Logout</a>{else}<a class="btn btn-ghost" href="{$WEB_ROOT}/login.php">Login</a><a class="btn btn-primary" href="{$WEB_ROOT}/register.php">Register</a>{/if}<button class="menu-toggle">☰</button></div></div></header>
+<main class="section"><div class="container">

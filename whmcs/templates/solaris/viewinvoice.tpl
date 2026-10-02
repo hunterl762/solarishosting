@@ -1,0 +1,4 @@
+{include file="$template/header.tpl"}
+<div class="page-hero" style="padding-top:18px"><span class="eyebrow">Billing</span><h1 class="gradient-text">Invoice #{$invoicenum}</h1><p>Status: {$status}</p></div>
+<div class="card"><div class="comparison"><table><tbody><tr><th>Invoice Date</th><td>{$date}</td></tr><tr><th>Due Date</th><td>{$duedate}</td></tr><tr><th>Total</th><td>{$total}</td></tr><tr><th>Balance</th><td>{$balance}</td></tr></tbody></table></div><div style="margin-top:20px">{$invoiceitems}</div>{if $status eq "Unpaid"}<div style="margin-top:24px"><a class="btn btn-primary" href="{$paymentlink}">Pay Invoice</a></div>{/if}</div>
+{include file="$template/footer.tpl"}

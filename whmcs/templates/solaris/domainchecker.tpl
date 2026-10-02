@@ -1,0 +1,4 @@
+{include file="$template/header.tpl"}
+<div class="page-hero" style="padding-top:18px"><span class="eyebrow">Domains</span><h1 class="gradient-text">Find your domain.</h1><p>Search for a new domain and add it to your Solaris Hosting account.</p></div>
+<div class="card" style="max-width:780px;margin:0 auto"><form method="post" action="cart.php?a=add&domain=register"><div class="form-grid"><div class="field full"><label>Domain name</label><input type="text" name="query" placeholder="yourbrand.com" required></div><div class="field full"><button class="btn btn-primary" type="submit">Search Domains</button></div></div></form></div>
+{include file="$template/footer.tpl"}
